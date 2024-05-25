@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%; 
+    background-image: url(image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8.5vw;
+    margin-top: 2vh;
+}
+.navbar img{
+    height: 100%;
+}
+.navbar button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #eb1a28;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.navbar button:hover{
+    background-color: #aa2730;
+}
+.sec1{
+    height: calc(100% - 60px);
+    width: 60%;
+    color: white;
+    padding: 20% 8.5vw;
+}
+.sec1 h1{
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.sec1 h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.finishbutton{
+    font-size: 1.6rem;
+    padding: 15px 25px;
+    background-color: #eb1a28;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.finishbutton:hover{
+    background-color: #aa2730;
+}
+.blank{
+    margin-top: 110px;
+    height: 10%;
+    width: 100%;
+    border-top: 6px solid #eb1a28;
+    border-radius: 20%;
+}
+.text{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 8.5vw;
+}
+.box{
+    padding: 1.8vw 7vw;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box-1{
+    height: 280px;
+    width: 300px;
+    border-radius: 7%;
+    padding: 2vw 1vw;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #1a2144, #421d49);;
+}
+.box-img{
+    height: 30%;
+    margin-bottom: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.box-para{
+    color: #dddddddc;
+    margin-top: 2vh;
+    font-weight: 550;
+}
+.ques{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.8vw 8.5vw;
+    gap: 4vh;
+}
+.ques1{
+    background-color: #2d2d2d;
+    padding: 10px 30px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.ques1:hover{
+    background-color: #767171;
+}
+.buttondiv{
+    width: 60%;
+    color: white;
+    padding: 2vw 8.5vw;
+}
+.anchordiv{
+    color: rgba(255, 255, 255, 0.71);
+    padding: 1vw 10vw;
+}
+.anchordiv a{
+    text-decoration: underline;
+}
+.footerdivmain{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.71);
+    padding: 1vw 10vw;
+    gap: 10vw;
+}
+.footerdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    text-decoration: underline;
+}
+.divselect{
+    color: rgba(255, 255, 255, 0.71);
+    padding: 1vw 10vw;
+}
+.search-select{
+    background-color: #2d2b2b;
+    color: white;
+    font-weight: 700;
+    padding: 0 8px;
+    margin-bottom: 4vh;
+    height: 5vh;
+    width: 7vw;
+    border-radius: 6%;
+}
+.divselect p{
+    margin-bottom: 10%;
+}
+@media (max-width:600px) {
+    html, body{
+        background-size: 300%;
+    }
+    .navbar{
+        padding: 0 6vw;
+    }
+    .sec1{
+        height: 0%;
+        width: 90%;
+        padding: 75% 6vw;
+    }
+    .sec1 h1{
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .sec1 h3{
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .finishbutton{
+        font-size: 1.5rem;
+        padding: 15px 25px;
+    }
+    .blank{
+        margin-top: 0px;
+    }
+    .text{
+        padding: 0 6vw;
+        font-size: 1rem;
+    }
+    .box{
+        padding: 3vw 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+    }
+    .box-1{
+        height: 180px;
+        width: 300px;
+        padding: 5vw 5vw;
+    }
+    .box-para{
+        font-size: 0.8rem;
+    }
+    .box-1 h2{
+        font-size: 1.2rem;
+    }
+    .ques{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        padding: 1.8vw 5vw;
+        gap: 1vh;
+    }
+    .ques1{
+        padding: 10px 30px;
+        width: 96%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .buttondiv{
+        width: 90%;
+    }
+    .search-select{
+        width: 30vw;
+    }
+}
